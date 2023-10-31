@@ -1,6 +1,6 @@
 [package]
 name = "grpcio"
-version = "0.12.0"
+version = "0.12.0+starry.1"
 edition = "2018"
 authors = ["The TiKV Project Developers"]
 license = "Apache-2.0"
@@ -50,6 +50,7 @@ boringssl = ["grpcio-sys/boringssl", "_secure"]
 openssl = ["_secure", "grpcio-sys/openssl"]
 openssl-vendored = ["_secure", "grpcio-sys/openssl-vendored"]
 no-omit-frame-pointer = ["grpcio-sys/no-omit-frame-pointer"]
+gen-bindings = [ "grpcio-sys/_gen-bindings" ]
 
 [badges]
 travis-ci = { repository = "tikv/grpc-rs" }
