@@ -409,7 +409,7 @@ fn bindgen_grpc(file_path: &Path) {
         .clang_arg("-xc++")
         .clang_arg("-I./grpc/include")
         .clang_arg("-std=c++11")
-        .rustfmt_bindings(true)
+        .formatter(bindgen::Formatter::Rustfmt)
         .impl_debug(true)
         .size_t_is_usize(true)
         .disable_header_comment()
